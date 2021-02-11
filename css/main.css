@@ -51,7 +51,7 @@ body {
           body .navbar-section nav .navbar-nav .nav-item .nav-link:hover::after {
             width: 100%; }
   body .home-section .container-fluid .row {
-    margin-top: 15rem; }
+    margin-top: 11rem; }
     body .home-section .container-fluid .row .col-md-6 {
       padding: 4rem;
       font-family: 'Cabin', sans-serif;
