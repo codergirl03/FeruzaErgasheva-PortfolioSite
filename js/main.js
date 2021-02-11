@@ -22,7 +22,7 @@ hamburger.addEventListener("click" , function(){
 
 //TypeWriter
 
-const texts = ['Frontend Developer'];
+const texts = ['Frontend Developer' , 'Creator'];
 let count = 0;
 let index = 0;
 let currentText = '';
