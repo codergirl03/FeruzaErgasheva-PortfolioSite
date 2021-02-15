@@ -15,7 +15,9 @@ body{
     //Navbar-section
      .navbar-section{
          position: relative;
+         box-sizing: border-box;
          nav{
+             box-sizing: border-box;
              background-image: linear-gradient(to bottom right ,  rgb(158, 66, 245),rgb(182, 103, 255));
              padding: 16px; 
              position: fixed;
@@ -23,12 +25,17 @@ body{
              left: 0;
              right: 0;
              z-index: 2;
+             .container-fluid{
+                 box-sizing: border-box;
              .navbar-header{
+                 box-sizing: border-box;
                  width: 30%;
                 img{
+                    box-sizing: border-box;
                     margin-bottom: 10px;
                     padding: 2px;
                     width: 11%;
+                    height: auto;
                     border-radius: 50%;
                     box-sizing: border-box;
                 }
@@ -63,13 +70,13 @@ body{
                          }
                          &:hover{
                             &::after{
-                                width: 100%;
-                               
+                                width: 100%;                              
                             }
                         }
                      }
                  }
              }
+            }
          }
      } 
 
@@ -754,11 +761,13 @@ body{
 @media screen and (max-width:991px){
     .navbar-section{
         nav{
+            .container-fluid{
             .navbar-header{
                 img{
                     width: 14% !important;
                 }
             }
+        }
         }
     }
     .home-section{
@@ -779,6 +788,7 @@ body{
     .navbar-section{
         nav{
             z-index: 1;
+            .container-fluid{
             .hamburger{
                 position: absolute;
                 cursor: pointer;
@@ -856,6 +866,7 @@ body{
                 -webkit-clip-path:circle (100px at 90% -10%);
             }
         }
+        }
     }
 }
 
@@ -904,6 +915,7 @@ body{
 @media screen and (max-width:750px){
     .navbar-section{
         nav{
+            .container-fluid{
             .navbar-header{
                 display: flex;
                 width: 45% !important;
@@ -913,12 +925,14 @@ body{
                 }
             }
         }
+        }
     }
 }
 
 @media screen and (max-width:650px){
     .navbar-section{
         nav{
+            .container-fluid{
             .navbar-header{
                 display: flex;
                 width: 50% !important;
@@ -926,6 +940,7 @@ body{
                     margin-top: 7px;
                 }
             }
+        }
         }
     }
     .otherSkills{
@@ -945,10 +960,12 @@ body{
 @media screen and (max-width:550px){
     .navbar-section{
         nav{
+            .container-fluid{
             .navbar-header{
                 display: flex;
                 width: 60% !important;
             }
+        }
         }
     }
     .home-section{
@@ -981,10 +998,12 @@ body{
 @media screen and (max-width:450px){
     .navbar-section{
         nav{
+            .container-fluid{
             .navbar-header{
                 display: flex;
                 width: 80% !important;
             }
+        }
         }
     }
     .aboutme{
@@ -1008,4 +1027,18 @@ body{
             }
         }
     }
+}
+
+@media screen and (max-width:414px){
+    .navbar-section{
+        nav{
+            .container-fluid{
+            .navbar-header{
+                img{
+                  height: 6vh !important;
+                }
+            }
+        }
+        }
+    } 
 }

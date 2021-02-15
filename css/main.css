@@ -6,8 +6,10 @@ body {
   overflow-x: hidden;
   scroll-behavior: smooth; }
   body .navbar-section {
-    position: relative; }
+    position: relative;
+    box-sizing: border-box; }
     body .navbar-section nav {
+      box-sizing: border-box;
       background-image: linear-gradient(to bottom right, #9e42f5, #b667ff);
       padding: 16px;
       position: fixed;
@@ -15,41 +17,46 @@ body {
       left: 0;
       right: 0;
       z-index: 2; }
-      body .navbar-section nav .navbar-header {
-        width: 30%; }
-        body .navbar-section nav .navbar-header img {
-          margin-bottom: 10px;
-          padding: 2px;
-          width: 11%;
-          border-radius: 50%;
-          box-sizing: border-box; }
-        body .navbar-section nav .navbar-header a {
-          color: white;
-          font-size: 30px;
-          font-weight: 700;
-          font-family: 'EB Garamond', serif;
-          letter-spacing: 2px; }
-      body .navbar-section nav .navbar-nav .nav-item {
-        padding: 15px;
-        position: relative; }
-        body .navbar-section nav .navbar-nav .nav-item .nav-link {
-          color: white;
-          font-size: 18px;
-          font-family: 'Cabin', sans-serif;
-          letter-spacing: 0.5px; }
-          body .navbar-section nav .navbar-nav .nav-item .nav-link::after {
-            content: "";
-            height: 2px;
-            background-color: white;
-            width: 0;
-            left: 0;
-            bottom: 15px;
-            top: unset;
-            right: unset;
-            position: absolute;
-            transition: all 0.4s linear; }
-          body .navbar-section nav .navbar-nav .nav-item .nav-link:hover::after {
-            width: 100%; }
+      body .navbar-section nav .container-fluid {
+        box-sizing: border-box; }
+        body .navbar-section nav .container-fluid .navbar-header {
+          box-sizing: border-box;
+          width: 30%; }
+          body .navbar-section nav .container-fluid .navbar-header img {
+            box-sizing: border-box;
+            margin-bottom: 10px;
+            padding: 2px;
+            width: 11%;
+            height: auto;
+            border-radius: 50%;
+            box-sizing: border-box; }
+          body .navbar-section nav .container-fluid .navbar-header a {
+            color: white;
+            font-size: 30px;
+            font-weight: 700;
+            font-family: 'EB Garamond', serif;
+            letter-spacing: 2px; }
+        body .navbar-section nav .container-fluid .navbar-nav .nav-item {
+          padding: 15px;
+          position: relative; }
+          body .navbar-section nav .container-fluid .navbar-nav .nav-item .nav-link {
+            color: white;
+            font-size: 18px;
+            font-family: 'Cabin', sans-serif;
+            letter-spacing: 0.5px; }
+            body .navbar-section nav .container-fluid .navbar-nav .nav-item .nav-link::after {
+              content: "";
+              height: 2px;
+              background-color: white;
+              width: 0;
+              left: 0;
+              bottom: 15px;
+              top: unset;
+              right: unset;
+              position: absolute;
+              transition: all 0.4s linear; }
+            body .navbar-section nav .container-fluid .navbar-nav .nav-item .nav-link:hover::after {
+              width: 100%; }
   body .home-section .container-fluid .row {
     margin-top: 11rem; }
     body .home-section .container-fluid .row .col-md-6 {
@@ -504,7 +511,7 @@ body {
   .home-section .container-fluid .row .col-md-6 img {
     margin-top: 1rem; } }
 @media screen and (max-width: 991px) {
-  .navbar-section nav .navbar-header img {
+  .navbar-section nav .container-fluid .navbar-header img {
     width: 14% !important; }
 
   .home-section .container-fluid .row .img-col {
@@ -514,26 +521,26 @@ body {
 @media screen and (max-width: 900px) {
   .navbar-section nav {
     z-index: 1; }
-    .navbar-section nav .hamburger {
+    .navbar-section nav .container-fluid .hamburger {
       position: absolute;
       cursor: pointer;
       right: 5%;
       top: 50%;
       transform: translateY(-50%);
       z-index: 2; }
-      .navbar-section nav .hamburger .line {
+      .navbar-section nav .container-fluid .hamburger .line {
         width: 32px;
         height: 2px;
         background-color: white;
         margin: 6px;
         transition: all 400ms ease-in-out; }
-      .navbar-section nav .hamburger #line1.hover {
+      .navbar-section nav .container-fluid .hamburger #line1.hover {
         transform: rotate(45deg) translate(12px); }
-      .navbar-section nav .hamburger #line2.hover {
+      .navbar-section nav .container-fluid .hamburger #line2.hover {
         opacity: 0; }
-      .navbar-section nav .hamburger #line3.hover {
+      .navbar-section nav .container-fluid .hamburger #line3.hover {
         transform: rotate(-45deg) translate(12px); }
-    .navbar-section nav .navbar-nav {
+    .navbar-section nav .container-fluid .navbar-nav {
       position: fixed;
       background-image: linear-gradient(to bottom right, #9e42f5, #b667ff);
       height: 105vh;
@@ -547,29 +554,29 @@ body {
       clip-path: circle(50px at 100% -10%);
       -webkit-clip-path: circle 100px at 90% -10%;
       transition: all 800ms ease-out; }
-      .navbar-section nav .navbar-nav :nth-child(1) {
+      .navbar-section nav .container-fluid .navbar-nav :nth-child(1) {
         transition: all 500ms ease 100ms; }
-      .navbar-section nav .navbar-nav :nth-child(2) {
+      .navbar-section nav .container-fluid .navbar-nav :nth-child(2) {
         transition: all 500ms ease 300ms; }
-      .navbar-section nav .navbar-nav :nth-child(3) {
+      .navbar-section nav .container-fluid .navbar-nav :nth-child(3) {
         transition: all 500ms ease 500ms; }
-      .navbar-section nav .navbar-nav :nth-child(4) {
+      .navbar-section nav .container-fluid .navbar-nav :nth-child(4) {
         transition: all 500ms ease 700ms; }
-      .navbar-section nav .navbar-nav :nth-child(5) {
+      .navbar-section nav .container-fluid .navbar-nav :nth-child(5) {
         transition: all 500ms ease 900ms; }
-      .navbar-section nav .navbar-nav .nav-item {
+      .navbar-section nav .container-fluid .navbar-nav .nav-item {
         opacity: 0;
         text-align: center; }
-        .navbar-section nav .navbar-nav .nav-item .nav-link {
+        .navbar-section nav .container-fluid .navbar-nav .nav-item .nav-link {
           margin: 0;
           font-size: 20px !important; }
-      .navbar-section nav .navbar-nav .nav-item.fade {
+      .navbar-section nav .container-fluid .navbar-nav .nav-item.fade {
         opacity: 1; }
-    .navbar-section nav .navbar-nav.open-nav {
+    .navbar-section nav .container-fluid .navbar-nav.open-nav {
       pointer-events: all;
       clip-path: circle(1000px at 90% -10%);
       -webkit-clip-path: circle(1070px at 90% -10%); }
-    .navbar-section nav .navbar-nav.close-nav {
+    .navbar-section nav .container-fluid .navbar-nav.close-nav {
       pointer-events: none;
       clip-path: circle(50px at 100% -10%);
       -webkit-clip-path: circle 100px at 90% -10%; } }
@@ -590,23 +597,23 @@ body {
   .otherSkills .container-fluid .row .lang .card {
     margin-top: -2rem !important; } }
 @media screen and (max-width: 750px) {
-  .navbar-section nav .navbar-header {
+  .navbar-section nav .container-fluid .navbar-header {
     display: flex;
     width: 45% !important; }
-    .navbar-section nav .navbar-header img {
+    .navbar-section nav .container-fluid .navbar-header img {
       margin-top: 7px;
       margin-right: 5px; } }
 @media screen and (max-width: 650px) {
-  .navbar-section nav .navbar-header {
+  .navbar-section nav .container-fluid .navbar-header {
     display: flex;
     width: 50% !important; }
-    .navbar-section nav .navbar-header img {
+    .navbar-section nav .container-fluid .navbar-header img {
       margin-top: 7px; }
 
   .otherSkills .container-fluid .row .hard .card {
     margin-top: -2rem !important; } }
 @media screen and (max-width: 550px) {
-  .navbar-section nav .navbar-header {
+  .navbar-section nav .container-fluid .navbar-header {
     display: flex;
     width: 60% !important; }
 
@@ -622,7 +629,7 @@ body {
       .aboutme .container-fluid .box .row .col-word {
         margin-top: 2rem !important; } }
 @media screen and (max-width: 450px) {
-  .navbar-section nav .navbar-header {
+  .navbar-section nav .container-fluid .navbar-header {
     display: flex;
     width: 80% !important; }
 
@@ -633,5 +640,8 @@ body {
 
   .footer .container-fluid .row .col-md-12 h6 .name {
     line-height: 5rem; } }
+@media screen and (max-width: 414px) {
+  .navbar-section nav .container-fluid .navbar-header img {
+    height: 6vh !important; } }
 
 /*# sourceMappingURL=main.css.map */
