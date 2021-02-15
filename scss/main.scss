@@ -1040,6 +1040,48 @@ body{
             }
         }
         }
+    }
+    .footer{
+        .container-fluid{
+            .row{
+                .col-md-4{
+                   .navbar-header{  
+                      img{
+                        height: 8vh !important;
+                      }
+                   }
+                }
+            }
+        }
     } 
 }
+
+
+@media screen and (max-width:412){
+    .navbar-section{
+        nav{
+            .container-fluid{
+            .navbar-header{
+                img{
+                  height: auto !important;
+                }
+            }
+        }
+        }
+    }
+    .footer{
+        .container-fluid{
+            .row{
+                .col-md-4{
+                   .navbar-header{  
+                      img{
+                        height: auto !important;
+                      }
+                   }
+                }
+            }
+        }
+    } 
+}
+
 }

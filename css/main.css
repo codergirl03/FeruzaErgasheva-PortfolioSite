@@ -633,6 +633,13 @@ body {
       line-height: 5rem; } }
   @media screen and (max-width: 414px) {
     body .navbar-section nav .container-fluid .navbar-header img {
+      height: 8vh !important; }
+    body .footer .container-fluid .row .col-md-4 .navbar-header img {
       height: 8vh !important; } }
+  @media screen and (max-width: 412) {
+    body .navbar-section nav .container-fluid .navbar-header img {
+      height: auto !important; }
+    body .footer .container-fluid .row .col-md-4 .navbar-header img {
+      height: auto !important; } }
 
 /*# sourceMappingURL=main.css.map */
