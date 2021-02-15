@@ -635,8 +635,8 @@ body {
     body .navbar-section nav .container-fluid .navbar-header img {
       height: 8vh !important; }
     body .footer .container-fluid .row .col-md-4 .navbar-header img {
-      height: 8vh !important; } }
-  @media screen and (max-width: 412) {
+      height: 6vh !important; } }
+  @media screen and (max-width: 412px) {
     body .navbar-section nav .container-fluid .navbar-header img {
       height: auto !important; }
     body .footer .container-fluid .row .col-md-4 .navbar-header img {
