@@ -1035,7 +1035,8 @@ body{
             .container-fluid{
             .navbar-header{
                 img{
-                  height: 6vh !important;
+                //   height: 6vh !important;
+                height: auto !important;
                 }
             }
         }
@@ -1047,34 +1048,7 @@ body{
                 .col-md-4{
                    .navbar-header{  
                       img{
-                        height: 6vh !important;
-                      }
-                   }
-                }
-            }
-        }
-    } 
-}
-
-
-@media screen and (max-width:412px){
-    .navbar-section{
-        nav{
-            .container-fluid{
-            .navbar-header{
-                img{
-                  height: auto !important;
-                }
-            }
-        }
-        }
-    }
-    .footer{
-        .container-fluid{
-            .row{
-                .col-md-4{
-                   .navbar-header{  
-                      img{
+                        // height: 6vh !important;
                         height: auto !important;
                       }
                    }
@@ -1083,5 +1057,33 @@ body{
         }
     } 
 }
+
+
+// @media screen and (max-width:412px){
+//     .navbar-section{
+//         nav{
+//             .container-fluid{
+//             .navbar-header{
+//                 img{
+                
+//                 }
+//             }
+//         }
+//         }
+//     }
+//     .footer{
+//         .container-fluid{
+//             .row{
+//                 .col-md-4{
+//                    .navbar-header{  
+//                       img{
+                        
+//                       }
+//                    }
+//                 }
+//             }
+//         }
+//     } 
+// }
 
 }
